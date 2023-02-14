@@ -69,3 +69,34 @@ while the first two functions were fairly straightforward, the enqueue function 
 3- if the Queue is not empty, then it increases the rear variable by 1 
 
 After one of these conditionals is met, the value passed in to the function will be added in to the index of `rear`'s value
+
+```
+dequeue()
+{
+	intx = 0;
+	if(isEmpty())
+	{
+		return;
+	}
+	else if(front == rear)
+	{
+		x = arr[front]
+		front = rear = -1
+	}
+	else 
+	{
+		x = arr[front]
+		front++
+	}
+	return x;
+}
+```
+Removing element from Queue
+
+In the dequeue function we also have three conditionals: 
+
+1- checks to see if Queue is empty. If true, there is nothing to remove and we exit program. 
+
+2- checks if the values for rear and front are equal. If true, this indicates that there is only 1 item in the Queue. We then assign x to the value at the index of `front` and then make front and rear equal to -1. This indicates we removed the only element in the Queue and the Queue is now empty. 
+
+3- if the first two conditionals were false, then we assign x  to the value at the index of `front` and increase `front` by 1.
