@@ -163,7 +163,7 @@ int main()
 			break;
 
 			case 9:
-			system("cls");
+			system("clear");
 			break;
 
 			default:
